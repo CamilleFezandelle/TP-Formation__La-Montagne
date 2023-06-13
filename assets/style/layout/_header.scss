@@ -1,0 +1,26 @@
+header {
+	height: 100vh;
+	min-height: 800px;
+	max-height: 1500px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	.content {
+		width: 80%;
+		flex: 1;
+		@include flex-center;
+		flex-flow: column nowrap;
+		h1 {
+			font-size: 5rem;
+			text-transform: uppercase;
+			letter-spacing: 6px;
+			text-align: center;
+			color: $primary-color;
+		}
+	}
+	.nav-bar {
+		width: 100%;
+		height: 100px;
+		background-color: cadetblue;
+	}
+}
