@@ -6,21 +6,86 @@ header {
 	flex-flow: column nowrap;
 	align-items: center;
 	.content {
-		width: 80%;
+		width: 100%;
 		flex: 1;
 		@include flex-center;
 		flex-flow: column nowrap;
 		h1 {
 			font-size: 5rem;
+			color: $primary-color;
+		}
+		p {
+			margin: 60px 0;
+			color: $primary-color;
+			font-size: 1.6rem;
+			font-style: italic;
+		}
+		button {
+			border: $primary-color 2px solid;
+			width: 75px;
+			height: 75px;
+			border-radius: 100%;
+			transition: all 250ms;
+			@include flex-center;
+			&:hover {
+				background-color: #ffffff60;
+			}
+		}
+		i {
+			color: $primary-color;
+			font-size: 1.4rem;
+		}
+	}
+	nav {
+		width: 100%;
+		height: 90px;
+		background-color: #ffffff50;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.nav-bar {
+		height: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		li {
+			@include flex-center;
+			padding: 0 20px;
+			height: 100%;
+			color: $primary-color;
+			font-family: 'Inter', sans-serif;
+			font-size: 0.9rem;
 			text-transform: uppercase;
-			letter-spacing: 6px;
-			text-align: center;
+			letter-spacing: 2px;
+			cursor: pointer;
+			&:first-child {
+				background-color: #f3f3f3;
+				color: $text-color;
+			}
+			&:hover {
+				background-color: #f3f3f3;
+				color: $text-color;
+			}
+		}
+		&:hover li:not(:hover) {
+			background: none;
 			color: $primary-color;
 		}
 	}
-	.nav-bar {
-		width: 100%;
-		height: 100px;
-		background-color: cadetblue;
+	.social-media {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		a {
+			margin: 0 38px;
+			font-size: 1.4rem;
+			color: $primary-color;
+			transition: all 250ms;
+			&:hover {
+				transform: scale(1.3);
+			}
+		}
 	}
 }
