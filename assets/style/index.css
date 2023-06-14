@@ -162,8 +162,8 @@ h2,
 h3 {
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 8px;
   text-align: center;
+  letter-spacing: 8px;
 }
 
 header {
@@ -318,6 +318,15 @@ header .social-media a {
 header .social-media a:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+}
+
+body {
+  background: url(../img/bg.jpg) center/cover fixed;
+}
+
+.container-home {
+  width: 1400px;
+  margin: 0 auto;
 }
 
 .sec1 {
@@ -502,7 +511,8 @@ header .social-media a:hover {
   padding-left: 10%;
   display: grid;
   grid-template-columns: 30% 70%;
-  border: #d1d1d1 1px solid;
+  border-left: #d1d1d1 1px solid;
+  border-bottom: #d1d1d1 1px solid;
 }
 .sec2-info--content h3 {
   font-size: 0.8rem;
@@ -535,6 +545,9 @@ header .social-media a:hover {
           justify-content: center;
   line-height: 30px;
   color: #898989;
+}
+.sec2-info--social {
+  border-bottom: none;
 }
 .sec2-info .social-media-container {
   display: -webkit-box;
@@ -570,15 +583,6 @@ header .social-media a:hover {
 .sec2-info .social-media-container a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-}
-
-body {
-  background: url(../img/bg.jpg) center/cover fixed;
-}
-
-.container-home {
-  width: 1400px;
-  margin: 0 auto;
 }
 
 .article-button {
