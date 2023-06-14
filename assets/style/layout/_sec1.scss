@@ -1,0 +1,91 @@
+.sec1 {
+	background-color: $primary-color;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+		'cont1 cont1'
+		'cont2 cont3';
+	article {
+		@include flex-center;
+		flex-flow: column nowrap;
+		padding: 75px 10%;
+		h1 {
+			color: $text-color;
+			width: 60%;
+		}
+		&:first-child {
+			grid-area: cont1;
+			border-bottom: $border1 1px solid;
+		}
+		&:nth-child(2) {
+			grid-area: cont2;
+			border-right: $border1 1px solid;
+		}
+		&:last-child {
+			grid-area: cont3;
+		}
+	}
+	.sec1-big-content {
+		// background-color: aquamarine;
+		span {
+			position: relative;
+			width: 100%;
+			font-size: 1.3rem;
+			color: $grey1;
+			text-align: center;
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				background-color: $border1;
+				width: 35%;
+				height: 2px;
+				top: 50%;
+			}
+			&::before {
+				left: 3%;
+			}
+			&::after {
+				right: 3%;
+			}
+		}
+		h1 {
+			font-size: 3rem;
+			margin: 60px 0 40px;
+			line-height: 60px;
+		}
+		p {
+			font-size: 1rem;
+			color: $grey1;
+			text-align: center;
+			font-style: italic;
+			width: 60%;
+			line-height: 40px;
+		}
+		img {
+			width: 100%;
+			margin: 60px 0;
+		}
+	}
+	.sec1-small-content {
+		span {
+			font-size: 1.1rem;
+			color: $grey1;
+		}
+		h1 {
+			font-size: 1.5rem;
+			margin: 40px 0 30px;
+			line-height: 30px;
+		}
+		p {
+			font-size: 0.9rem;
+			color: $grey1;
+			line-height: 32px;
+			margin-bottom: 60px;
+		}
+		img {
+			width: 100%;
+			margin-bottom: 40px;
+		}
+	}
+}

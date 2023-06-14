@@ -1,0 +1,13 @@
+.article-button {
+	border: $grey2 2px solid;
+	padding: 10px 35px;
+	font-family: 'Inter', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-align: center;
+	font-size: 1rem;
+	transition: all 250ms;
+	&:hover {
+		transform: scale(1.1);
+	}
+}
